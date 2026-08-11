@@ -1,0 +1,12 @@
+cd assignment_02
+# 1. Compile Bellman-Ford Driver
+gcc -O2 -Iinclude driver/bellman_ford_driver.c src/bellman_ford.c src/csr.c -o bf_runner.exe
+
+# 2. Compile Floyd-Warshall Driver
+gcc -O2 -Iinclude driver/floyd_warshall_driver.c src/floyd_warshall.c -o fw_runner.exe
+
+# Run Bellman-Ford on 10-vertex graph
+.\bf_runner.exe data/bf_10.txt
+
+# Run Floyd-Warshall on 10-vertex graph
+.\fw_runner.exe data/fw_10.txt
